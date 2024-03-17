@@ -25,7 +25,7 @@ export default function AuthLayout({
               allowing users to effortlessly shorten lengthy URLs for sharing across different digital platforms. 
               Moreover, the URL Shortener offers extensive analytics for each generated URL. Users can access detailed insights, 
               such as the date and time of each click, the total number of clicks, the devices used to access the link, and the referral sources. 
-              These analytics are visualized through intuitive charts, offering users a clear understanding of their link's performance.
+              These analytics are visualized through intuitive charts, offering users a clear understanding of their link&apos;s performance.
             </p>
           </div>
         </div>
