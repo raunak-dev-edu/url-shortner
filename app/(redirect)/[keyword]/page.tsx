@@ -38,7 +38,7 @@ const KeywordPage: React.FC<KeywordPageProps> = async ({ params }) => {
       referrer: referer ?? 'Direct',
       userAgent: userAgent ?? 'Unknown',
       ip: ip ?? 'Unknown',
-      countryCode: countryCode ?? 'Unknown'
+      countryCode: countryCode ?? 'ZZ'
     }
   });
 

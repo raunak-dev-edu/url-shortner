@@ -58,17 +58,10 @@ export const getStatistic = async (): Promise<StatisticData> => {
       })
     ]
   );
-    console.log('country', country);
-    console.log('ok',country[0].countryCode)
 
   const regionName = new Intl.DisplayNames(['en'], { type: 'region' });
-  let topCountry;
-  if(country[0].countryCode === 'Unknown'){
-    topCountry = country?.length > 0 ? regionName.of('ZZ') : 'N/A';
-  }else{
-    topCountry = country?.length > 0 ? regionName.of(country[0].countryCode) : 'N/A';
-  
-  }
+  const topCountry = country?.length > 0 ? regionName.of(country[0].countryCode) : 'N/A';
+
 
   return { totalLinks, totalHits, topLink, topCountry };
 };
