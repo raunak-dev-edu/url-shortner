@@ -6,19 +6,12 @@ import { Cross2Icon } from '@radix-ui/react-icons';
 
 import { cn } from '@/lib/utils';
 
-interface CustomDialogPortalProps extends DialogPrimitive.DialogPortalProps {
-  className?: string;
-}
-
 const Dialog = DialogPrimitive.Root;
 
 const DialogTrigger = DialogPrimitive.Trigger;
 
-const DialogPortal = ({
-  className,
-  ...props
-}: CustomDialogPortalProps) => (
-  <DialogPrimitive.Portal className={cn(className)} {...props} />
+const DialogPortal = (props: DialogPrimitive.DialogPortalProps) => (
+  <DialogPrimitive.Portal {...props} />
 );
 DialogPortal.displayName = DialogPrimitive.Portal.displayName;
 
